@@ -2,8 +2,8 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
+/Swaim2DWeek/[Ll]ibrary/
+/Swaim2DWeek/[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
