@@ -1034,7 +1034,7 @@ MonoBehaviour:
   runSpeed: 500
   jumpSpeed: 10
   spriteRenderer: {fileID: 669868175}
-  animator: {fileID: 0}
+  animator: {fileID: 669868176}
 --- !u!1 &1852474112
 GameObject:
   m_ObjectHideFlags: 0
