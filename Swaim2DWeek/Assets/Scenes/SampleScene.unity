@@ -1205,11 +1205,11 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 8
-  m_DeadZoneWidth: 0.6
-  m_DeadZoneHeight: 0.6
+  m_DeadZoneWidth: 0.38
+  m_DeadZoneHeight: 0.38
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.978
+  m_SoftZoneWidth: 2
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
@@ -2039,7 +2039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 500
-  jumpSpeed: 10
+  jumpSpeed: 9
   countText: {fileID: 2078698590}
   spriteRenderer: {fileID: 669868175}
   animator: {fileID: 669868176}
