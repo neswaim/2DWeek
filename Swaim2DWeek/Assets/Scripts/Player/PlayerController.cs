@@ -30,11 +30,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             int levelMask = LayerMask.GetMask("Level");
 
-            if( Physics2D.BoxCast(transform.position, new Vector2(1, .1f), 0f, Vector2.down, .01f, levelMask))
+            if (Physics2D.BoxCast(transform.position, new Vector2(1, 0.1f), 0f, Vector2.down, 0.01f, levelMask))
             {
                 Jump();
             }
