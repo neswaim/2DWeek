@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
         rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
