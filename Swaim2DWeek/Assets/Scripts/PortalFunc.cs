@@ -9,6 +9,7 @@ public class PortalFunc : MonoBehaviour
     public GameObject Player;
 
 
+
     // Use this for initialization
     void Start()
     {
