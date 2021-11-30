@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
+    public TextMeshProUGUI countText;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
@@ -15,7 +17,7 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-        StartDialogue();
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame

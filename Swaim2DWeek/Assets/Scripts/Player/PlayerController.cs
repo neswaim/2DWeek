@@ -11,12 +11,11 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 5;
     public float jumpSpeed = 200f;
     public TextMeshProUGUI countText;
-
     public SpriteRenderer spriteRenderer;
     public Animator animator;
 
     private int count;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
         rigidBody2D.AddForce(direction);
 
-        if( rigidBody2D.velocity.x > 0)
+        if (rigidBody2D.velocity.x > 0)
         {
             spriteRenderer.flipX = false;
         }
@@ -54,7 +53,7 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
-        if ( Mathf.Abs(horizontalInput) > 0f )
+        if (Mathf.Abs(horizontalInput) > 0f)
         {
             animator.SetBool("isRunning", true);
         }
