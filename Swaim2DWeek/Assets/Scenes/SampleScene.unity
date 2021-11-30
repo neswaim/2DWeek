@@ -2123,7 +2123,7 @@ MonoBehaviour:
   jumpSpeed: 9
   countText: {fileID: 2078698590}
   spriteRenderer: {fileID: 669868175}
-  animator: {fileID: 669868176}
+  animator: {fileID: 0}
 --- !u!1 &1710298786
 GameObject:
   m_ObjectHideFlags: 0
