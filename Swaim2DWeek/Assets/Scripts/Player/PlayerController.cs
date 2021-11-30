@@ -21,10 +21,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
-
-        count = 0;
-
-        SetCountText();
     }
 
     // Update is called once per frame
@@ -78,16 +74,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
-
-            count = count + 1;
-
-            SetCountText();
         }
-    }
-
-    void SetCountText()
-    {
-        countText.text = "Count: " + count.ToString();
     }
 }
 
