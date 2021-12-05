@@ -33,7 +33,7 @@ public class PortalFunc : MonoBehaviour
 
     IEnumerator Teleport()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         Player.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
     }
 }
