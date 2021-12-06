@@ -11,7 +11,7 @@ public class Blackout : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     public void Update()
@@ -20,7 +20,7 @@ public class Blackout : MonoBehaviour
         {
             StartCoroutine(FadeBlackOutSquare(true));
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(FadeBlackOutSquare(false));
         }
