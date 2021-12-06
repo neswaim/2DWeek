@@ -16,7 +16,7 @@ public class Blackout : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(FadeBlackOutSquare(true));
         }
