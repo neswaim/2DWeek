@@ -18,7 +18,7 @@ public class Blackout : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            StartCoroutine(FadeBlackOutSquare());
+            StartCoroutine(FadeBlackOutSquare(true));
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -26,18 +26,21 @@ public class Blackout : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, int fadeSpeed = 5)
+    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, int fadeSpeed = 1)
     {
         Color objectColor = blackOutSquare.GetComponent<Image>().color;
         float fadeAmount;
 
         if (fadeToBlack)
         {
-            fadeAmount = objectColor.a + (fadeSpeed * Time.deltaTime);
+            while (blackOutSquare.GetComponent<Image>().color.a < 1)
+            {
+                fadeAmount = objectColor.a + (fadeSpeed * Time.deltaTime);
 
-            objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
-            blackOutSquare.GetComponent<Image>().color = objectColor;
-            yield return null;
+                objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
+                blackOutSquare.GetComponent<Image>().color = objectColor;
+                yield return null;
+            }
         }
 
         else
