@@ -23,6 +23,7 @@ public class StartFade : MonoBehaviour
     {
         Color objectColor = blackOutSquare.GetComponent<Image>().color;
         float fadeAmount;
+        yield return new WaitForSeconds(2);
 
         if (fadeToBlack)
         {
@@ -42,6 +43,7 @@ public class StartFade : MonoBehaviour
             {
                 fadeAmount = objectColor.a - (fadeSpeed * Time.deltaTime);
 
+                
                 objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
                 blackOutSquare.GetComponent<Image>().color = objectColor;
                 yield return null;
