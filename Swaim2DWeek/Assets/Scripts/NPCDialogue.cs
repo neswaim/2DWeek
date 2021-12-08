@@ -33,7 +33,6 @@ public class NPCDialogue : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = true;
-            Debug.Log("Player now in range");
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -41,7 +40,6 @@ public class NPCDialogue : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
-            Debug.Log("Player now NOT in range");
         }
     }
 }
