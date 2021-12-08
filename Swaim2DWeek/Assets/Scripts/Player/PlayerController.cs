@@ -11,7 +11,9 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 5;
     public float jumpSpeed = 200f;
     public float maxVel;
-    public float vel;
+    public float minVel;
+    public float velx;
+    public float vely;
 
     public TextMeshProUGUI countText;
     public SpriteRenderer spriteRenderer;
@@ -47,9 +49,14 @@ public class PlayerController : MonoBehaviour
 
         rigidBody2D.AddForce(direction);
 
-        vel = rigidBody2D.velocity.magnitude;
+        velx = rigidBody2D.velocity.x;
+        vely = rigidBody2D.velocity.y;
 
-        if (vel > maxVel)
+        if (velx > maxVel)
+        {
+            rigidBody2D.velocity = rigidBody2D.velocity.normalized * maxVel;
+        }
+        if (velx < minVel)
         {
             rigidBody2D.velocity = rigidBody2D.velocity.normalized * maxVel;
         }
