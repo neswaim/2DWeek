@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
 
     public float runSpeed = 5;
     public float jumpSpeed = 200f;
+    public float maxVel;
+    public float vel;
+
     public TextMeshProUGUI countText;
     public SpriteRenderer spriteRenderer;
     public Animator animator;
@@ -44,7 +47,14 @@ public class PlayerController : MonoBehaviour
 
         rigidBody2D.AddForce(direction);
 
-        if (rigidBody2D.velocity.x > 0)
+        vel = rigidBody2D.velocity.magnitude;
+
+        if (vel > maxVel)
+        {
+            rigidBody2D.velocity = rigidBody2D.velocity.normalized * maxVel;
+        }
+
+            if (rigidBody2D.velocity.x > 0)
         {
             spriteRenderer.flipX = false;
         }
