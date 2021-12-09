@@ -275,6 +275,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5663801549814584926, guid: 5b236d8e13929014986cecc596f118f3, type: 3}
   m_PrefabInstance: {fileID: 26709098}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &28018934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28018935}
+  - component: {fileID: 28018936}
+  m_Layer: 0
+  m_Name: mushroom (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &28018935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28018934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.567307, y: -13.39797, z: 7.1718817}
+  m_LocalScale: {x: 0.049922824, y: 0.06992498, z: 1}
+  m_Children: []
+  m_Father: {fileID: 170302433}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &28018936
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28018934}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 307aed2d1c727924bbb61f3164391ed1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 11.66, y: 8.27}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &45660471
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,9 +509,9 @@ MonoBehaviour:
   textComponent: {fileID: 1382315059}
   lines:
   - 
-  - Welcome to ?!
-  - Testing
-  - Testing
+  - "Has anyone checked what\u2019s in this cave, anyway?"
+  - No?
+  - "\u2026great."
   textSpeed: 0.1
 --- !u!114 &46353315
 MonoBehaviour:
@@ -13759,6 +13841,9 @@ Transform:
   - {fileID: 213441986}
   - {fileID: 12200995}
   - {fileID: 1950102101}
+  - {fileID: 1567613345}
+  - {fileID: 1601529650}
+  - {fileID: 28018935}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41774,8 +41859,9 @@ MonoBehaviour:
   textComponent: {fileID: 1243629447}
   lines:
   - 
-  - You..
-  - ..you shouldn't have come here.
+  - "You\u2019re too late."
+  - ..did you even try?
+  - "Whatever.. It doesn\u2019t matter now."
   textSpeed: 0.1
 --- !u!114 &467523376
 MonoBehaviour:
@@ -41790,7 +41876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6097913, g: 0.23921567, b: 1, a: 0.3529412}
+  m_Color: {r: 0.6097913, g: 0.23921567, b: 1, a: 0.3137255}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -67844,9 +67930,7 @@ MonoBehaviour:
   textComponent: {fileID: 2074096883}
   lines:
   - 
-  - Welcome to ?!
-  - Testing
-  - Testing
+  - "Damn, she\u2019s intense, huh?"
   textSpeed: 0.1
 --- !u!114 &848662005
 MonoBehaviour:
@@ -67961,8 +68045,13 @@ MonoBehaviour:
   textComponent: {fileID: 503575829}
   lines:
   - 
-  - Hey!
-  - What are you doing here?
+  - "Hey, what\u2019re you doing?"
+  - Are you a cosplayer, or something? You look funny.
+  - 
+  - The world? What are you talking about? It looks fine to me.
+  - 
+  - ..global warming? Oh come on.. do you really believe in that stuff?
+  - ..weirdo.
   textSpeed: 0.1
 --- !u!114 &853208367
 MonoBehaviour:
@@ -69653,7 +69742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001210779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.54, y: -41.805, z: 0.2799067}
+  m_LocalPosition: {x: 29.709, y: -52.728, z: 0.2799067}
   m_LocalScale: {x: 1, y: 1.0119, z: 1}
   m_Children: []
   m_Father: {fileID: 917731038}
@@ -71244,7 +71333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322002311}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.571, y: -95.745, z: 0.2799067}
+  m_LocalPosition: {x: 4.19, y: -95.76, z: 0.2799067}
   m_LocalScale: {x: 1, y: 1.0119, z: 1}
   m_Children: []
   m_Father: {fileID: 917731038}
@@ -71936,9 +72025,7 @@ MonoBehaviour:
   textComponent: {fileID: 1686409348}
   lines:
   - 
-  - Welcome to ?!
-  - 'Population: 4'
-  - Stop by the tavern for some ale!
+  - Ferne Residence and Farm
   textSpeed: 0.1
 --- !u!114 &1434472763
 MonoBehaviour:
@@ -72639,9 +72726,12 @@ MonoBehaviour:
   textComponent: {fileID: 57275096}
   lines:
   - 
-  - Once so beautiful, so full of color, so full of life; this world will see ruin
-    soon enough.
-  - Don't believe me? Step into the portal; see its decay for yourself.
+  - Hey..
+  - Who are you?
+  - 
+  - ..Kade?
+  - "You know what, nevermind. I don\u2019t care. "
+  - "Just.. stay away from my house. I\u2019m waiting for my wife to get home. "
   textSpeed: 0.1
 --- !u!1 &1557478337
 GameObject:
@@ -72807,6 +72897,88 @@ Transform:
   m_Father: {fileID: 170302433}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1567613344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1567613345}
+  - component: {fileID: 1567613346}
+  m_Layer: 0
+  m_Name: mushroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1567613345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567613344}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6173067, y: -7.4609704, z: 7.1718817}
+  m_LocalScale: {x: 0.04710589, y: 0.05484312, z: 1}
+  m_Children: []
+  m_Father: {fileID: 170302433}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1567613346
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567613344}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 307aed2d1c727924bbb61f3164391ed1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 11.66, y: 8.27}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1595416597
 GameObject:
   m_ObjectHideFlags: 0
@@ -73157,6 +73329,88 @@ MonoBehaviour:
   countText: {fileID: 0}
   spriteRenderer: {fileID: 669868175}
   animator: {fileID: 669868176}
+--- !u!1 &1601529649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1601529650}
+  - component: {fileID: 1601529651}
+  m_Layer: 0
+  m_Name: mushroom (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1601529650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601529649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.200693, y: -0.5609705, z: 7.1718817}
+  m_LocalScale: {x: 0.04710589, y: 0.05484312, z: 1}
+  m_Children: []
+  m_Father: {fileID: 170302433}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1601529651
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601529649}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 307aed2d1c727924bbb61f3164391ed1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 11.66, y: 8.27}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1608320795
 GameObject:
   m_ObjectHideFlags: 0
@@ -75757,8 +76011,8 @@ MonoBehaviour:
   textComponent: {fileID: 474945236}
   lines:
   - 
-  - You were the one who did this.
-  - ..you shouldn't have come here.
+  - ..
+  - 
   textSpeed: 0.1
 --- !u!114 &2088112069
 MonoBehaviour:
@@ -75773,7 +76027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6097913, g: 0.23921567, b: 1, a: 0.3529412}
+  m_Color: {r: 0.6097913, g: 0.23921567, b: 1, a: 0.3137255}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
