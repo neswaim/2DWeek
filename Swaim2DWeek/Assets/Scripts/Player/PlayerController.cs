@@ -63,11 +63,11 @@ public class PlayerController : MonoBehaviour
 
             if (rigidBody2D.velocity.x > 0)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
         else
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
         }
 
         if (Mathf.Abs(horizontalInput) > 0f)
